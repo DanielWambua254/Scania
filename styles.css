@@ -1,0 +1,634 @@
+body {
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    text-decoration: none;
+}
+
+nav .logo {
+    margin-left: 30px;
+}
+.backgroud{
+    background-image: url(images/ruckRacing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 40px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.backgroud h1{
+    color: white;
+    font-size: 50px;
+}
+.backgroud p{
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+}
+.menu ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    height: 100%;
+}
+
+/* removing default syling on nav a tags */
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo  {
+    height: 60px;
+    width: 100px;
+    background-image: url(images/Scania\ Logo\ Wallpaper\ 37846.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.logo a {
+    height: 100%;
+    width: 100%;
+}
+
+nav li {
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 20px 15px;
+    color: #f2f2f2;
+    transition: all 0.3s ease-in;
+}
+nav li:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    margin-left: 0;
+    display: none;
+    margin-right: 50px;
+}
+
+
+.backgroud span {
+    color: crimson;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+}
+
+.button button {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+}
+.button button:hover {
+    background: none;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+
+/* trucks section stling*/
+
+.electric_trucks{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #ecdada;
+}
+.electric_trucks, h2 {
+    text-align: center;
+}
+
+.truck_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.electricTruckTextAndSpecs {
+    width: calc(60% - 50px);
+}
+.electricTruckTextAndSpecs  p {
+    color: black;
+    font-weight: lighter;
+    word-spacing: 0.5px;
+    text-align: justify;
+    font-weight: 400;
+}
+.electric , h1, h2, h4 {
+    color: blueviolet;
+}
+.bev_specs p {
+    text-align: center;
+}
+.bevBtn {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bevBtn button {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+}
+.bevBtn button:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+    scale: 1.05;
+}
+
+/* images styling both trucks and buses */
+
+.vehicle_image {
+    width: calc(40% - 50px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vehicle_image img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+/* buses section styling */
+.electricBus {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #222;
+}
+
+.electricBus h2 {
+    color: white;
+}
+
+.busContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.electricBusesTextAndSpecs {
+    height: 100%;
+    width: calc(50% - 50px);
+    color: white;
+    font-weight: lighter;
+    word-spacing: 0.5px;
+    text-align: justify;
+    font-weight: 400;
+}
+.electricBusesTextAndSpecs  p {
+    color: white;
+    font-weight: lighter;
+    word-spacing: 0.5px;
+    text-align: justify;
+    font-weight: 400;
+}
+.cityWideBtn {
+    width: 150px;
+    height: 40px;
+}
+.cityWideBtn button {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+}
+
+.cityWideBtn button:hover {
+    background: none;
+    color: white;
+    cursor: pointer;
+    scale: 1.05;
+}
+/* deals styling */
+
+.deals {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.T_and_B {
+    background-color: #c8cddb;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 6px;
+    width: calc(33.33% - 30px);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+}
+.collection a {
+    text-decoration: none;
+}
+.T_and_B:hover {
+    background:#ebe2e2 ;
+    border: 1px solid black;
+}
+
+.T_and_B span {
+    color: rgba(128, 39, 211, 0.637);
+}
+.T_and_B .button_checkout {
+    width: 40%;
+    
+}
+.T_and_B .button_checkout button {
+    width: 100%;
+    height: 100%;
+    background: rgb(146, 110, 19);
+    border:  1px solid black;
+    border-radius: 3px;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.T_and_B .button_checkout button:hover {
+    background: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #222;
+    margin-bottom: 12px;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+    margin: 3px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+footer i {
+    color: white;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+    scale: 1.05;
+}
+.footer_div {
+    width: calc(25% - 30px);
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 6px;
+}
+
+/* responsive styling */
+
+/* tablet view  */
+@media (min-width: 768px) {
+    nav .logo {
+        margin-left: 10px;
+    }
+    nav {
+        position: fixed;
+    }
+    
+    .backgroud{
+        padding-left: 80px;
+        padding-right: 30px;
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .backgroud h1{
+        color: white;
+        font-size: 40px;
+    }
+    .backgroud p{
+        color: white;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    ul {
+        padding: 0;
+        margin: 0 0 0 100px;
+        list-style: none;
+    }
+    nav li {
+        height: 100%;
+        width: 80px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: 15px 10px;
+        color: #f2f2f2;
+        transition: all 0.3s ease-in;
+    }
+    .electricTruckTextAndSpecs {
+        width: calc(60% - 40px);
+    }
+    .bev_specs p {
+        text-align: center;
+    }
+    .vehicle_image {
+        width: calc(40% - 40px);
+    }
+    .electricBusesTextAndSpecs {
+        height: 100%;
+        width: calc(60% - 40px);
+        color: white;
+        font-weight: lighter;
+        word-spacing: 0.5px;
+        text-align: justify;
+        font-weight: 400;
+    }
+    .T_and_B {
+        background-color: #c8cddb;
+        border-radius: 4px;
+        padding: 3px;
+        margin: 6px;
+        width: calc(25% - 10px);
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .T_and_B .button_checkout {
+        width: 60%;
+    }
+    .footer_div {
+        width: calc(25% - 30px);
+        text-align: center;
+    }
+    .T_and_B .button_checkout button {
+        font-size: 14px;
+    }
+    .T_and_B .button_checkout button:hover {
+        background: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+/* larger devices view  */
+@media (max-width: 767px) {
+    nav .logo {
+        margin-left: 10px;
+    }
+    nav {
+        position: fixed;
+    }
+    
+    .backgroud{
+        padding-left: 60px;
+        padding-right: 30px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    .backgroud h1{
+        color: white;
+        font-size: 30px;
+    }
+    .backgroud p{
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .menu {
+        position: fixed;
+        height: 590px;
+        width: 100%;
+        left: -150%;
+        top: 0;
+        background : black;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+    .menu li {
+        display: block;
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    .menu  li a {
+        display: block;
+        margin: 20px 0;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .electricTruckTextAndSpecs {
+        width: 100%;
+    }
+    .bev_specs p {
+        text-align: center;
+    }
+    .electricBusesTextAndSpecs {
+        height: 100%;
+        width: 100%;
+        font-weight: 400;
+    }
+    .vehicle_image {
+        width: 80%;
+    }
+    
+    .T_and_B {
+        width: calc(40% - 5px);
+    }
+    .T_and_B .button_checkout {
+        width: 60%;
+    }
+    .footer_div {
+        width: calc(25% - 10px);
+        text-align: center;
+    }
+    .T_and_B .button_checkout button {
+        font-size: 12px;
+    }
+    .T_and_B .button_checkout button:hover {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .footer_div {
+        width: calc(50%);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* small devices view  */
+@media (max-width: 480px) {
+
+    nav .logo {
+        margin-left: 8px;
+    }
+    nav {
+        position: fixed;
+    }
+    
+    .backgroud{
+        padding-left: 30px;
+        padding-right: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .backgroud h1{
+        color: white;
+        font-size: 30px;
+    }
+    .backgroud p{
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .electricTruckTextAndSpecs {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bev_specs p {
+        text-align: center;
+    }
+    .bev_specs p {
+        text-align: center;
+    }
+    .electricBusesTextAndSpecs {
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-weight: lighter;
+        word-spacing: 0.5px;
+        text-align: justify;
+        font-weight: 400;
+    }
+    .vehicle_image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .vehicle_image img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .T_and_B {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .T_and_B .button_checkout {
+        width: 40%;
+    }
+    .footer_div {
+        width: calc(50%);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .T_and_B .button_checkout button {
+        font-size: 12px;
+    }
+    .T_and_B .button_checkout button:hover {
+        background: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
