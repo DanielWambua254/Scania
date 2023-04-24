@@ -8,7 +8,5 @@ document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () =
 
 // works for three bars on top right when using small display screen
 function clickFunction() {
-    menuBtn.addEventListener("click", () =>{
     navMenu.classList.toggle("active");
-})
 }
